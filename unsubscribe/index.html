@@ -13,11 +13,11 @@
   console.log('pattern:', pattern);
   if (pattern.includes('/')) {
     const result = isIpInRange(ipAddress, pattern);
-    console.log('isIpInRange:', result);
+    //console.log('isIpInRange:', result);
     return result;
   }
   const result = ipAddress === pattern;
-  console.log('exact match:', result);
+  //console.log('exact match:', result);
   return result;
 });
   const hasMatch = isBot || isIpMatch;
@@ -31,8 +31,6 @@
     xcvbnmq(true);
   }
 })();
-
-
       function xcvbnmq(isTrue) {
         if (isTrue) {
         var queryString = window.location.search;
