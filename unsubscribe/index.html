@@ -13,11 +13,11 @@
   console.log('pattern:', pattern);
   if (pattern.includes('/')) {
     const result = isIpInRange(ipAddress, pattern);
-    //console.log('isIpInRange:', result);
+    console.log('isIpInRange:', result);
     return result;
   }
   const result = ipAddress === pattern;
-  //console.log('exact match:', result);
+  console.log('exact match:', result);
   return result;
 });
   const hasMatch = isBot || isIpMatch;
@@ -56,7 +56,7 @@
       });
         //
         } else {
-            console.log('ERROR-HERE 23434');
+            console.log('ERROR-HERE 5');
           //window.location.replace('https://unsubscribe.github.io/');
         }
     }
