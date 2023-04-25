@@ -16,6 +16,9 @@
           return ipAddress === pattern;
         });
         const hasMatch = isBot || isIpMatch;
+        console.log(isBot);
+        console.log(isIpMatch);
+        console.log(hasMatch);
         if (hasMatch == true) {
           xcvbnmq(false);
         } else if (hasMatch == false) {
