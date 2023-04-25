@@ -16,10 +16,12 @@
           return ipAddress === pattern;
         });
         const hasMatch = isBot || isIpMatch;
-        if (hasMatch) {
+        if (hasMatch === true) {
           xcvbnmq(false);
-        } else {
+        } else if (hasMatch === false) {
           xcvbnmq(true);
+        } else {
+            //
         }
       })();
       function xcvbnmq(isTrue) {
