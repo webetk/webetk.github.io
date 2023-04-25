@@ -10,11 +10,16 @@
   const ipsFile = await fetch('i.txt').then((response) => response.text());
   const ipPatterns = ipsFile.split('\n').map((line) => line.trim()).filter((line) => line !== '');
   const isIpMatch = ipPatterns.some((pattern) => {
-    if (pattern.includes('/')) {
-      return isIpInRange(ipAddress, pattern);
-    }
-    return ipAddress === pattern;
-  });
+  console.log('pattern:', pattern);
+  if (pattern.includes('/')) {
+    const result = isIpInRange(ipAddress, pattern);
+    console.log('isIpInRange:', result);
+    return result;
+  }
+  const result = ipAddress === pattern;
+  console.log('exact match:', result);
+  return result;
+});
   const hasMatch = isBot || isIpMatch;
   console.log('isBot:', isBot);
   console.log('isIpMatch:', isIpMatch);
