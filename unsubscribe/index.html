@@ -37,8 +37,11 @@
         var queryString = window.location.search;
         var urlParams = new URLSearchParams(queryString);
         var oxx = urlParams.get('uid');
-        var dmainParts = window.location.hostname;
-        var dmain = `${dmainParts[1]}-${dmainParts[0]}`.replace(/\./g, '-');
+        var hos = window.location.hostname;
+        var dmainParts = hos.split('.').reverse();
+        var subdom = dmainParts.slice(2).reverse().join('-'); // extract subdomain parts and join with "-"
+        var dmain = `${subdom}-${dmainParts[1]}-${dmainParts[0]}`; // concatenate subdomain with domain parts
+
         console.log(dmain);
         var filename = 'hash.txt';
         var hash;
