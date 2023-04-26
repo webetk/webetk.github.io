@@ -1,15 +1,15 @@
-# My Project
+# WEBETK
 
 ## Introduction
 
-My project is a web application that allows users to create and share recipes. Users can browse recipes created by others, save their favorite recipes, and even create their own.
+WEBETK is a web application that allows users to create and share recipes. Users can browse recipes created by others, save their favorite recipes, and even create their own. (BETA)
 
 ## Technologies Used
 
 The project is built using the following technologies:
 
-- React
-- Node.js
+- HTML
+- JS
 - MongoDB
 - Bootstrap
 
