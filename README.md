@@ -1,8 +1,8 @@
-# WEBETK
+# SHARE IN URL - TESTING BETA
 
 ## Introduction
 
-WEBETK is a web application that allows users to create and share recipes. Users can browse recipes created by others, save their favorite recipes, and even create their own. (BETA)
+MXSRVR is a web application that allows users to create and share recipes. Users can browse recipes created by others, save their favorite recipes, and even create their own. (BETA)
 
 ## Technologies Used
 
